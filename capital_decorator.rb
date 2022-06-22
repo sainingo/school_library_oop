@@ -1,7 +1,7 @@
-require './nameable'
+require './base_decorator'
 
-class CapitalDecorator < Nameable
-  def initialize(nameable = Nameable.new)
+class CapitalDecorator < Decorator
+  def initialize(nameable)
     super()
     @nameable = nameable
   end
