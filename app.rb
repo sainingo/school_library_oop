@@ -50,4 +50,24 @@ class App
       puts "#{index}) Title: \"#{x.title}\", Author: #{x.author} "
     end
   end
+
+  def list_people
+    @people.each_with_index do |x, index|
+      puts "#{index}) [#{x.class.name}] Name: #{x.name}, ID: #{x.id}, Age: #{x.age}"
+    end
+  end
+
+  def action_list_books
+    list_books
+    puts 'Press enter to continue ...'
+    gets.chomp
+    run
+  end
+
+  def action_list_people
+    list_people
+    puts "\n\nPress any key to continue"
+    gets
+    run
+  end
 end
