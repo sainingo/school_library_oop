@@ -40,7 +40,7 @@ class App
     when '6'
       list_rental
     else
-      puts 'Thanks You, Bye Bye...'
+      puts 'Thanks for using this app ...'
       exit
     end
   end
@@ -58,14 +58,14 @@ class App
   end
 
   def action_list_books
-    puts 'Please create a book' if list_books.length <= 0
+    list_books
     puts 'Press enter to continue ...'
     gets.chomp
     run
   end
 
   def action_list_people
-    puts 'Please create a book' if list_people.length <= 0
+    list_people
     puts "\n\nPress any key to continue"
     gets
     run
@@ -149,7 +149,7 @@ class App
       me = x if x.id == person_id.to_i
     end
     me.rentals.each do |x|
-      puts x.date
+      puts "Date: #{x.date}. Book: '#{x.book.title}' by #{x.book.author} "
     end
     puts
     run
