@@ -23,4 +23,31 @@ class App
     puts "7 - Exit\n\n"
     gets.chomp
   end
+
+  def run
+    choice = show_menu
+    case choice
+    when '1'
+      action_list_books
+    when '2'
+      action_list_people
+    when '3'
+      create_person
+    when '4'
+      create_book
+    when '5'
+      create_rental
+    when '6'
+      list_rental
+    else
+      puts 'Thanks You, Bye Bye...'
+      exit
+    end
+  end
+
+  def list_books
+    @my_books.each_with_index do |x, index|
+      puts "#{index}) Title: \"#{x.title}\", Author: #{x.author} "
+    end
+  end
 end
