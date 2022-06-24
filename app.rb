@@ -58,14 +58,14 @@ class App
   end
 
   def action_list_books
-    list_books
+    puts 'Please create a book' if list_books.length <= 0
     puts 'Press enter to continue ...'
     gets.chomp
     run
   end
 
   def action_list_people
-    list_people
+    puts 'Please create a book' if list_people.length <= 0
     puts "\n\nPress any key to continue"
     gets
     run
