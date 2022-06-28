@@ -40,7 +40,7 @@ class App
     when '6'
       list_rental
     else
-      puts 'Thanks for using this app ...'
+      puts 'Thanks You Bye Bye...'
       exit
     end
   end
