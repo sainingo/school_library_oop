@@ -11,6 +11,7 @@
 ## Built With
 
 - Ruby
+- JSON data
 - [git-bash](https://git-scm.com/downloads)
 
 
