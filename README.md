@@ -11,6 +11,7 @@
 ## Built With
 
 - Ruby
+- JSON data
 - [git-bash](https://git-scm.com/downloads)
 
 
@@ -58,11 +59,6 @@ ubhandle](https://github.com/misheck12)
 - Twitter: [@twitterhandle](https://twitter.com/mishecklivingi2)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/misheck-livingi-a0b536142/)
 
-👤 **Edward Odhiambo**
-
-- GitHub: [@whit3d](https://github.com/white3d)
-- Twitter: [@odhiambo_ed](https://twitter.com/odhiambo_ed)
-- LinkedIn: [Edward Odhiambo](https://www.linkedin.com/in/edward-odhiambo-6a462a21b/)
 
 
 ## 🤝 Contributing
