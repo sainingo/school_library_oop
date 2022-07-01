@@ -22,6 +22,12 @@ describe 'Person' do
       nperson = Person.new(15, 'Susan', false)
       expect(nperson.parent_permission).to be_falsey
     end
+
+    it 'The validate_name method corrects the name' do
+      nperson = Person.new(29, 'John', parent_permission: true)
+      expect(nperson.correct_name).to eq('John')
+      expect(nperson.correct_name).not_to eq('Johnhhhh')
+    end
   end
 
   describe 'Can use services' do
